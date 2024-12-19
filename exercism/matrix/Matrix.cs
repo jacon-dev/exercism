@@ -8,13 +8,16 @@ namespace matrix
 {
     public class Matrix
     {
+        private readonly string input;
+
         public Matrix(string input)
         {
+            this.input = input;
         }
 
         public int[] Row(int row)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            return [1];
         }
 
         public int[] Column(int col)
