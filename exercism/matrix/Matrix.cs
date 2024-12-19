@@ -1,38 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace matrix
+﻿namespace matrix
 {
     public class Matrix
     {
-        private readonly string input = string.Empty;
-        private string[] InputRows => input.Split('\n');
+        private readonly int[][] matrix;
 
-        public Matrix(string input)
-        {
-            this.input = input;
-        }
+        public Matrix(string input) => matrix = input.Split("\n").Select(row => row.Split(" ").Select(int.Parse).ToArray()).ToArray();
 
-        public int[] Row(int row)
-        {
-            return ToIntArray(InputRows[row - 1]);
-        }
+        public int[] Row(int row) => matrix[row - 1];
 
-        public int[] Column(int col)
-        {
-            return (from row in InputRows 
-                    select ToIntArray(row)[col - 1])
-                    .ToArray();
-        }
-
-        private static int[] ToIntArray(string str)
-        {
-            return str.Split(' ')
-                .Select(x => Convert.ToInt32(x))
-                .ToArray();
-        }
+        public int[] Column(int col) => matrix.Select(row => row[col - 1]).ToArray();
     }
 }
