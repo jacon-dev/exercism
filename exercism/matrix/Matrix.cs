@@ -25,7 +25,15 @@ namespace matrix
 
         public int[] Column(int col)
         {
-            throw new NotImplementedException("You need to implement this method.");
+            var t = new List<int>();
+            foreach(var row in InputRows)
+            {
+                var array = row.Split(' ')
+                .Select(x => Convert.ToInt32(x))
+                .ToArray();
+                t.Add(array[col -1]);
+            }
+            return t.ToArray();
         }
     }
 }
