@@ -9,6 +9,7 @@ namespace matrix
     public class Matrix
     {
         private readonly string input = string.Empty;
+        private string[] InputRows => input.Split('\n');
 
         public Matrix(string input)
         {
@@ -17,9 +18,7 @@ namespace matrix
 
         public int[] Row(int row)
         {
-            var rowIndex = row - 1;
-            var rows = input.Split('\n');
-            return rows[rowIndex].Split(' ')
+            return InputRows[row - 1].Split(' ')
                 .Select(x => Convert.ToInt32(x))
                 .ToArray();
         }
