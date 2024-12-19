@@ -18,22 +18,21 @@ namespace matrix
 
         public int[] Row(int row)
         {
-            return InputRows[row - 1].Split(' ')
-                .Select(x => Convert.ToInt32(x))
-                .ToArray();
+            return ToIntArray(InputRows[row - 1]);
         }
 
         public int[] Column(int col)
         {
-            var t = new List<int>();
-            foreach(var row in InputRows)
-            {
-                var array = row.Split(' ')
+            return (from row in InputRows 
+                    select ToIntArray(row)[col - 1])
+                    .ToArray();
+        }
+
+        private static int[] ToIntArray(string str)
+        {
+            return str.Split(' ')
                 .Select(x => Convert.ToInt32(x))
                 .ToArray();
-                t.Add(array[col -1]);
-            }
-            return t.ToArray();
         }
     }
 }
