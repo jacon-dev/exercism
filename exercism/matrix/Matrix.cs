@@ -8,7 +8,7 @@ namespace matrix
 {
     public class Matrix
     {
-        private readonly string input;
+        private readonly string input = string.Empty;
 
         public Matrix(string input)
         {
@@ -17,7 +17,11 @@ namespace matrix
 
         public int[] Row(int row)
         {
-            return [1];
+            var rowIndex = row - 1;
+            var rows = input.Split('\n');
+            return rows[rowIndex].Split(' ')
+                .Select(x => Convert.ToInt32(x))
+                .ToArray();
         }
 
         public int[] Column(int col)
