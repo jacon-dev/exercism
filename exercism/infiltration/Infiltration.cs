@@ -19,7 +19,9 @@
 
         public static bool CanFreePrisoner(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake, bool petDogIsPresent)
         {
-            return !new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => x);
+            if (new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => x)) return false;
+            if (new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => !x) && !petDogIsPresent) return false;
+            return true;
         }
     }
 }

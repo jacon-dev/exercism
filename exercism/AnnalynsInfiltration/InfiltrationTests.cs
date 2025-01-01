@@ -152,15 +152,15 @@ namespace infiltration.tests
         //    Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
         //}
 
-        //[Test]
-        //public void Cannot_free_prisoner_if_everyone_is_asleep_and_pet_dog_is_absent()
-        //{
-        //    var knightIsAwake = false;
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = false;
-        //    var petDogIsPresent = false;
-        //    Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Cannot_free_prisoner_if_everyone_is_asleep_and_pet_dog_is_absent()
+        {
+            var knightIsAwake = false;
+            var archerIsAwake = false;
+            var prisonerIsAwake = false;
+            var petDogIsPresent = false;
+            Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
         //[Test]
         //public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_present()
