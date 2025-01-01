@@ -90,37 +90,37 @@ namespace infiltration.tests
             Assert.True(Infiltration.CanSpy(knightIsAwake, archerIsAwake, prisonerIsAwake));
         }
 
-        //[Test]
-        //public void Can_signal_prisoner_if_archer_is_sleeping_and_prisoner_is_awake()
-        //{
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = true;
-        //    Assert.True(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
-        //}
+        [Test]
+        public void Can_signal_prisoner_if_archer_is_sleeping_and_prisoner_is_awake()
+        {
+            var archerIsAwake = false;
+            var prisonerIsAwake = true;
+            Assert.True(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
+        }
 
-        //[Test]
-        //public void Cannot_signal_prisoner_if_archer_is_awake_and_prisoner_is_sleeping()
-        //{
-        //    var archerIsAwake = true;
-        //    var prisonerIsAwake = false;
-        //    Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
-        //}
+        [Test]
+        public void Cannot_signal_prisoner_if_archer_is_awake_and_prisoner_is_sleeping()
+        {
+            var archerIsAwake = true;
+            var prisonerIsAwake = false;
+            Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
+        }
 
-        //[Test]
-        //public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_sleeping()
-        //{
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = false;
-        //    Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
-        //}
+        [Test]
+        public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_sleeping()
+        {
+            var archerIsAwake = false;
+            var prisonerIsAwake = false;
+            Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
+        }
 
-        //[Test]
-        //public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_awake()
-        //{
-        //    var archerIsAwake = true;
-        //    var prisonerIsAwake = true;
-        //    Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
-        //}
+        [Test]
+        public void Cannot_signal_prisoner_if_archer_and_prisoner_are_both_awake()
+        {
+            var archerIsAwake = true;
+            var prisonerIsAwake = true;
+            Assert.False(Infiltration.CanSignalPrisoner(archerIsAwake, prisonerIsAwake));
+        }
 
         //[Test]
         //public void Cannot_free_prisoner_if_everyone_is_awake_and_pet_dog_is_present()

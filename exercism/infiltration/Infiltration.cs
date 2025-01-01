@@ -14,7 +14,7 @@
 
         public static bool CanSignalPrisoner(bool archerIsAwake, bool prisonerIsAwake)
         {
-            throw new NotImplementedException();
+            return (!archerIsAwake && prisonerIsAwake) ? true : false;
         }
 
         public static bool CanFreePrisoner(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake, bool petDogIsPresent)
