@@ -21,6 +21,7 @@
         {
             if (new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => x)) return false;
             if (new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => !x) && !petDogIsPresent) return false;
+            if (archerIsAwake) return false;
             return true;
         }
     }
