@@ -8,14 +8,14 @@ namespace infiltration.tests
         public void Cannot_execute_fast_attack_if_knight_is_awake()
         {
             var knightIsAwake = true;
-            Assert.False(Infiltration.CanFastAttack(knightIsAwake));
+            Assert.That(Infiltration.CanFastAttack(knightIsAwake), Is.False);
         }
 
         [Test]
         public void Can_execute_fast_attack_if_knight_is_sleeping()
         {
             var knightIsAwake = false;
-            Assert.True(Infiltration.CanFastAttack(knightIsAwake));
+            Assert.That(Infiltration.CanFastAttack(knightIsAwake), Is.True);
         }
 
         [Test]
