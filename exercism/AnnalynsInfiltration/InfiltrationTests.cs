@@ -262,24 +262,24 @@ namespace infiltration.tests
             Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
         }
 
-        //[Test]
-        //public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_present()
-        //{
-        //    var knightIsAwake = true;
-        //    var archerIsAwake = true;
-        //    var prisonerIsAwake = false;
-        //    var petDogIsPresent = true;
-        //    Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_present()
+        {
+            var knightIsAwake = true;
+            var archerIsAwake = true;
+            var prisonerIsAwake = false;
+            var petDogIsPresent = true;
+            Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
-        //[Test]
-        //public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_absent()
-        //{
-        //    var knightIsAwake = true;
-        //    var archerIsAwake = true;
-        //    var prisonerIsAwake = false;
-        //    var petDogIsPresent = false;
-        //    Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Cannot_free_prisoner_if_only_prisoner_is_asleep_and_pet_dog_is_absent()
+        {
+            var knightIsAwake = true;
+            var archerIsAwake = true;
+            var prisonerIsAwake = false;
+            var petDogIsPresent = false;
+            Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
     }
 }

@@ -23,6 +23,7 @@
             if (new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => !x) && !petDogIsPresent) return false;
             if (archerIsAwake) return false;
             if (knightIsAwake) return false;
+            if (!prisonerIsAwake) return false;
             return true;
         }
     }
