@@ -162,25 +162,25 @@ namespace infiltration.tests
             Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
         }
 
-        //[Test]
-        //public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_present()
-        //{
-        //    var knightIsAwake = false;
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = true;
-        //    var petDogIsPresent = true;
-        //    Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_present()
+        {
+            var knightIsAwake = false;
+            var archerIsAwake = false;
+            var prisonerIsAwake = true;
+            var petDogIsPresent = true;
+            Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
-        //[Test]
-        //public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_absent()
-        //{
-        //    var knightIsAwake = false;
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = true;
-        //    var petDogIsPresent = false;
-        //    Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Can_free_prisoner_if_only_prisoner_is_awake_and_pet_dog_is_absent()
+        {
+            var knightIsAwake = false;
+            var archerIsAwake = false;
+            var prisonerIsAwake = true;
+            var petDogIsPresent = false;
+            Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
         [Test]
         public void Cannot_free_prisoner_if_only_archer_is_awake_and_pet_dog_is_present()
@@ -202,15 +202,15 @@ namespace infiltration.tests
             Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
         }
 
-        //[Test]
-        //public void Can_free_prisoner_if_only_knight_is_awake_and_pet_dog_is_present()
-        //{
-        //    var knightIsAwake = true;
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = false;
-        //    var petDogIsPresent = true;
-        //    Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Can_free_prisoner_if_only_knight_is_awake_and_pet_dog_is_present()
+        {
+            var knightIsAwake = true;
+            var archerIsAwake = false;
+            var prisonerIsAwake = false;
+            var petDogIsPresent = true;
+            Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
         [Test]
         public void Cannot_free_prisoner_if_only_knight_is_awake_and_pet_dog_is_absent()
@@ -242,15 +242,15 @@ namespace infiltration.tests
             Assert.False(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
         }
 
-        //[Test]
-        //public void Can_free_prisoner_if_only_archer_is_asleep_and_pet_dog_is_present()
-        //{
-        //    var knightIsAwake = true;
-        //    var archerIsAwake = false;
-        //    var prisonerIsAwake = true;
-        //    var petDogIsPresent = true;
-        //    Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
-        //}
+        [Test]
+        public void Can_free_prisoner_if_only_archer_is_asleep_and_pet_dog_is_present()
+        {
+            var knightIsAwake = true;
+            var archerIsAwake = false;
+            var prisonerIsAwake = true;
+            var petDogIsPresent = true;
+            Assert.True(Infiltration.CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent));
+        }
 
         [Test]
         public void Cannot_free_prisoner_if_only_archer_is_asleep_and_pet_dog_is_absent()

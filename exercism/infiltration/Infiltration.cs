@@ -25,7 +25,10 @@
                 return petDogIsPresent;
             }
             if (archerIsAwake) return false;
-            if (knightIsAwake) return false;
+            if (knightIsAwake)
+            {
+                return petDogIsPresent;
+            }
             if (!prisonerIsAwake) return false;
             return true;
         }
