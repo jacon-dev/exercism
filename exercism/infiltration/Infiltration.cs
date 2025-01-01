@@ -9,7 +9,7 @@
 
         public static bool CanSpy(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake)
         {
-            throw new NotImplementedException();
+            return !new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => !x);
         }
 
         public static bool CanSignalPrisoner(bool archerIsAwake, bool prisonerIsAwake)
