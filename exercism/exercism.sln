@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrix", "matrix\matrix.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrix.tests", "matrix.tests\matrix.tests.csproj", "{574C4527-28F2-4DC6-BA11-E115C7ECF308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infiltration.tests", "AnnalynsInfiltration\infiltration.tests.csproj", "{9A9AC98D-2579-4CEA-BB3E-6EF8FCA2A07B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infiltration", "infiltration\infiltration.csproj", "{5B4FF697-8FF6-48CA-A766-E8C1A1C75B21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{574C4527-28F2-4DC6-BA11-E115C7ECF308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{574C4527-28F2-4DC6-BA11-E115C7ECF308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{574C4527-28F2-4DC6-BA11-E115C7ECF308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9AC98D-2579-4CEA-BB3E-6EF8FCA2A07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9AC98D-2579-4CEA-BB3E-6EF8FCA2A07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9AC98D-2579-4CEA-BB3E-6EF8FCA2A07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9AC98D-2579-4CEA-BB3E-6EF8FCA2A07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4FF697-8FF6-48CA-A766-E8C1A1C75B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4FF697-8FF6-48CA-A766-E8C1A1C75B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4FF697-8FF6-48CA-A766-E8C1A1C75B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4FF697-8FF6-48CA-A766-E8C1A1C75B21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
