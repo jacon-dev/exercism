@@ -19,7 +19,7 @@
 
         public static bool CanFreePrisoner(bool knightIsAwake, bool archerIsAwake, bool prisonerIsAwake, bool petDogIsPresent)
         {
-            throw new NotImplementedException();
+            return !new[] { knightIsAwake, archerIsAwake, prisonerIsAwake }.All(x => x);
         }
     }
 }
